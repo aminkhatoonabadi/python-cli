@@ -59,9 +59,9 @@ while True:
     print("{0} {1} {2} = {3}".format(num1,opt,num2,result))
     while True:
         cont = input("Do you want to continue using calculator? (type Yes OR Y if you want to continue and No OR N for Exit): ")
-        if cont == "No" or cont == "no" or cont == "N" or cont == "n":
+        if cont.casefold() == "no" or cont.casefold() == "n":
             exit()
-        elif cont == "Yes" or cont == "yes" or cont == "Y" or cont == "y":
+        elif cont.casefold() == "yes" or cont.casefold() == "y":
             break
         else:
             print("Your selection is not valid!")
